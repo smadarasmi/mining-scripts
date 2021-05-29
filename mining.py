@@ -18,6 +18,8 @@ target = "00000000000000000004cd8ded26a588b80d487ebb38391aac60a81934031f8b"
 if args.target != None:
     target = args.target
 
+print(target)
+
 def mine(data):
     rng = random.Random(threading.current_thread().ident)
     while(True):
@@ -38,7 +40,8 @@ data = f.read()
 thread_list = []
 for i in range(int(args.threads)):
     thread = threading.Thread(target=mine, args=(data,))
-    thread.daemon = True
+    #thread.daemon = True
     thread_list.append(thread)
 for thread in thread_list:
+    print("starting thread...")
     thread.start()

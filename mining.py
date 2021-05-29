@@ -41,5 +41,4 @@ for i in range(int(args.threads)):
     thread.daemon = True
     thread_list.append(thread)
 for thread in thread_list:
-    print("starting...")
     thread.start()

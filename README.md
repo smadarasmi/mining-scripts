@@ -14,7 +14,7 @@ This repository is meant to show just how hard it is to mine BTC today.
 `-f`: input file as the block data for hashing
 
 ```
-python3 mining.py -f transaction.json -t 000000061b162a15f1dc160ac001a81503a031d20f3b3a341c1035ebfbbee0f -n 100
+python3 mining.py -f transaction.json -t 0000000061b162a15f1dc160ac001a81503a031d20f3b3a341c1035ebfbbee0f -n 100
 ```
 
 or to use the default target address set as the difficulty target from May 29, 2021
